@@ -60,6 +60,7 @@ strong {
 
 /* Ensure Luna stays fixed to the left */
 .luna {
-    position: absolute;
+    position: sticky;
     left: 0;
+    padding: 1em;
 }
