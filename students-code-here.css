@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #ffcc00;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.game-board {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.instructions {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.instructions em {
+    font-weight: bold;
+    color: #555;
+}
+
+.relative, .absolute, .fixed, .sticky, .zindex {
+    position: relative;
+}
+
+.clothing img, .relative-corgi img, .absolute-corgi img, .fixed-corgi img, .fixed-corgi-signature img, .stick-corgi img, .stick-clothing img, .zindex-corgi img {
+    display: inline-block;
+    margin: 5px;
+}
+
+/* Relative Positioning */
+.relative .funny-glasses {
+    position: relative;
+    top: -50px; /* Adjust as needed */
+    left: 60px; /* Adjust as needed */
+}
+
+/* Absolute Positioning */
+.absolute {
+    position: relative;
+}
+
+.absolute .bandana {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 30px; /* Adjust as needed */
+}
+
+/* Fixed Positioning */
+.fixed-corgi-signature .pawprint {
+    position: fixed;
+    top: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Sticky Positioning */
+.sticky {
+    display: flex;
+    overflow-x: auto;
+}
+
+.sticky .luna {
+    position: sticky;
+    left: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.sticky-padding {
+    width: 50px; /* Adjust as needed */
+}
+
+/* Z-Index */
+.zindex .top-hat {
+    position: relative;
+    z-index: 10; /* Adjust to ensure the top hat is above the corgi */
+}
+
+/* Best Dressed Doggo Award */
+.best-dressed {
+    position: relative;
+    text-align: center;
+}
+
+.best-dressed img {
+    display: inline-block;
+}
+
+.best-dressed .pawprint {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
